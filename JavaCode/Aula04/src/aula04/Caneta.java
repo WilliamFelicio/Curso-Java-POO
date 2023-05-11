@@ -1,34 +1,28 @@
 package aula04;
 public class Caneta {
-    public String modelo;
-    public String cor;
-    private float ponta;
-    protected int carga;
-    private boolean tampada; 
+   public String modelo;
+   private float ponta;
 
-    public void status () {
-        System.out.println("Caneta " +this.cor);
-        System.out.println("Modelo: " +this.modelo);
-        System.out.println("Esta tampada? " +this.tampada);
-        System.out.println("Tamanho da ponta: " +this.ponta);
-        System.out.println("Carga: " +this.carga);
-    }
+   public String getModelo(){
+        return this.modelo;
+   }
 
-    public void rabiscar ()  {
-        if (this.tampada == true){
-            System.out.println("ERRO! Impossivel rabiscar");
-        }else{
-            System.out.println("Estou rabiscando");
-        }
-    }
+   public void setModelo(String model){
+    this.modelo=model;
+   }
 
-    public void tampar () {
-        System.out.println("Caneta TAMPADA");
-        this.tampada = true;
-    }
+   public float getPonta(){
+    return this.ponta;
+   }
 
-    protected void destampar () {
-        System.out.println("Caneta DESTAMPADA");
-        this.tampada = false;
-    }
+   public void setPonta(float pont){
+    this.ponta=pont;
+   }
+
+   public void status(){
+    System.out.println("Caracteristicas da Caneta");
+    System.out.println("Modelo: " +this.modelo);
+    System.out.println("Ponta: " +this.ponta);
+   }
+
 }
