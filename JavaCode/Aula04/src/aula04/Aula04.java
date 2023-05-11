@@ -15,7 +15,9 @@ public class Aula04 {
         c2.setPonta(0.2f);
         c2.status();
         
-
+        Caneta c3=new Caneta();
+        c3.destampar();
+        c3.status();
     }
 }
 
